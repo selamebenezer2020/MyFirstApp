@@ -1,6 +1,6 @@
 using System;
 
-namespace Lesson
+namespace Lessons
 {
     public class NumericTypes
     {
@@ -34,13 +34,30 @@ namespace Lesson
 
         // range -7 .9228E+24 to 7.9228E+24
         decimal _myDecimalValue = 13.234M;
-
+        
+        //Type Inferance; the get Type method returns the variable type.
         public void GetSomeType()
         {
+
+            // double
             Console.WriteLine(3.0.GetType());
+            //float
             Console.WriteLine(_myFloatValue.GetType());
 
+        }
+        // method to demonstrait an explicit cast from float to int.
+        public int convertFloatToInt(float value){
+            
+            int total =(int)value;
+            return total;
 
+
+
+        }
+        //method to demonstare an implicit cast from int to long
+        public long LongFromInt(int value){
+            long total= value;
+            return total;
         }
 
 
