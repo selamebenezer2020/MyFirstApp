@@ -44,6 +44,7 @@ namespace ClassWork
             Console.WriteLine(myHouse.paintDoor);// red
             // MycarResuilt();
             MyNumericExamples();
+            
 
         }
         static void MyNumericExamples()
@@ -55,8 +56,21 @@ namespace ClassWork
             Console.WriteLine(something);
 
             Console.WriteLine(myTypes.LongFromInt(5600));
+            myTypes.BasicMath();
+            myTypes.CheckedOperators();
+            myTypes.IncrementDecrement();
+            myTypes.SpecialValue();
+            myTypes.ComparisonOperators();
 
         }
+
+        static void OtherNumbericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.otherOperator();
+        }
+
+
         static void MycarResuilt()
         {
             CarInACarRentalApplication my = new CarInACarRentalApplication();

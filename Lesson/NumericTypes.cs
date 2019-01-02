@@ -34,8 +34,9 @@ namespace Lessons
 
         // range -7 .9228E+24 to 7.9228E+24
         decimal _myDecimalValue = 13.234M;
-        
+
         //Type Inferance; the get Type method returns the variable type.
+
         public void GetSomeType()
         {
 
@@ -46,22 +47,113 @@ namespace Lessons
 
         }
         // method to demonstrait an explicit cast from float to int.
-        public int convertFloatToInt(float value){
-            
-            int total =(int)value;
+        public int convertFloatToInt(float value)
+        {
+
+            int total = (int)value;
             return total;
 
 
 
         }
         //method to demonstare an implicit cast from int to long
-        public long LongFromInt(int value){
-            long total= value;
+        public long LongFromInt(int value)
+        {
+            long total = value;
             return total;
+
+
+        }
+        public void BasicMath()
+
+        {
+            int myVal = 5, myOtherVal = 10;
+
+            int addVal = myVal + myOtherVal;
+            int subtractVal = myOtherVal - myVal;
+            int multiplyVal = myVal * myOtherVal;
+            int divionVal = myVal / myOtherVal;
+            int modulsVal = myVal % myOtherVal;
+
+
+            Console.WriteLine(addVal);
+            Console.WriteLine(subtractVal);
+            Console.WriteLine(multiplyVal);
+            Console.WriteLine(divionVal);
+            Console.WriteLine(modulsVal);
+
+        }
+
+
+        public void CheckedOperators()
+        {
+            int test = 100, test2 = 100;
+
+
+            int testVal = checked(test * test2);
+            checked
+            {
+                //make the value 300000000 to fail.
+                int testAgain = test * 300;
+                Console.WriteLine(testAgain);
+
+            }
+            Console.WriteLine(testVal);
+
+        }
+
+        public void IncrementDecrement()
+
+        {
+            int myValue = 13, myOther = 10;
+            // myValue = myValue +1
+            myValue++;
+            Console.WriteLine(myValue);
+
+            //myother = myother -1;
+
+            Console.WriteLine(myOther);
+            Console.WriteLine(myValue);
+            Console.WriteLine(myOther);
+
+        }
+
+        public void SpecialValue()
+
+        {
+            Console.WriteLine(2.0 / 0.0);
+            Console.WriteLine(-2.0 / 0.0);
+            Console.WriteLine(2.0 / -0.0);
+            Console.WriteLine(-2.0 / -0.0);
+            Console.WriteLine(0.0 / 0.0);
+            Console.WriteLine((2.0 /0.0) - (2.0/0.0));
+            Console.WriteLine(0.0 / -0.0 == double.NaN);
+            Console.WriteLine(double.IsNaN(0.0 / 0.0));
+            Console.WriteLine(object.Equals(0.0 / 0.0,
+            double.NaN));
+
+        }
+
+         public void ComparisonOperators()
+
+        {
+            bool isCool = true; // declaration of a bool value #endregion
+
+            int x = 3, y = 5, z = 3;
+
+            Console.WriteLine(x == y);// false
+            Console.WriteLine(x != y);// true
+            Console.WriteLine(x == z);// true
+            
+        }
+        public void otherOperator()
+        {
+            int val=5, val2 = 10;
+            //val = vall + val2
+            Console.WriteLine(val += val2);
         }
 
 
 
-        
     }
 }
