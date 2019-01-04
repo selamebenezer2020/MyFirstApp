@@ -22,31 +22,50 @@ namespace ClassWork
         {
 
 
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
             /*console is a class and writeline is method needs parameter ()
                and should be in parameter  */
 
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
 
             //created object instance of house called my house
 
-            House myHouse = new House();
-            myHouse.paintDoor = "Red";
-            myHouse.CloseDoor();// the door closes
-             //this get the value of red from the object
+            //House myHouse = new House();
+            //myHouse.paintDoor = "Red";
+            //myHouse.CloseDoor();// the door closes
+                                //this get the value of red from the object
 
-            Console.WriteLine(myHouse.paintDoor); // red
-             //this is a second object instance of house.
+            //Console.WriteLine(myHouse.paintDoor); // red
+                                                  //this is a second object instance of house.
 
-            House mySecondHouse = new House();
-            mySecondHouse.paintDoor = "green";
-            Console.WriteLine(mySecondHouse.paintDoor); //green
-            Console.WriteLine(myHouse.paintDoor);// red
+            //House mySecondHouse = new House();
+            //mySecondHouse.paintDoor = "green";
+            //Console.WriteLine(mySecondHouse.paintDoor); //green
+            //Console.WriteLine(myHouse.paintDoor);// red
             // MycarResuilt();
-            MyNumericExamples();
+            //MyNumericExamples();
+            MyStringExamples();
             
 
+
         }
+
+        static void MyStringExamples()
+        {
+            StringTypes myTypes = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+            string words = myTypes.StringBuilderExample
+            ("Hello", "C  Sharp", "class");
+            
+            Console.WriteLine(words);
+            myTypes.charTypeExample();
+             myTypes.EscapeExample();
+            myTypes.PlaceHolderExample();
+            myTypes.MyHouseArray();
+            myTypes.MultiArraySample();
+        }
+
         static void MyNumericExamples()
 
         {
@@ -61,7 +80,8 @@ namespace ClassWork
             myTypes.IncrementDecrement();
             myTypes.SpecialValue();
             myTypes.ComparisonOperators();
-
+           
+        
         }
 
         static void OtherNumbericExamples()
