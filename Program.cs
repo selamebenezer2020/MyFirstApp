@@ -33,10 +33,10 @@ namespace ClassWork
             //House myHouse = new House();
             //myHouse.paintDoor = "Red";
             //myHouse.CloseDoor();// the door closes
-                                //this get the value of red from the object
+            //this get the value of red from the object
 
             //Console.WriteLine(myHouse.paintDoor); // red
-                                                  //this is a second object instance of house.
+            //this is a second object instance of house.
 
             //House mySecondHouse = new House();
             //mySecondHouse.paintDoor = "green";
@@ -44,9 +44,39 @@ namespace ClassWork
             //Console.WriteLine(myHouse.paintDoor);// red
             // MycarResuilt();
             //MyNumericExamples();
-            MyStringExamples();
-            
+            //MyStringExamples();
+            StatmentSamples();
 
+
+
+        }
+
+        static void StatmentSamples()
+        {
+            StatmentExamples se = new StatmentExamples();
+
+
+            //se.SampleIf();
+            //se.SampleIfElse();
+            //se.SampleIfChain();
+            //se.SampleIfAnd();
+            //se.SampleIfOr();
+            //se.SampleConditional();
+            //se.SampleSwitch(10);
+            //se.SampleWhile();
+            //se.SampleDoWhile();
+            //se.SampleFor();
+            //se.SampleForEach();
+            //string mystring = se.JumpStatmentExample("Sunday");
+            //Console.WriteLine(mystring);
+            BottlesSong();
+        }
+
+        static void BottlesSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            string song = beer.BottlesOfBeerSong();
+            Console.WriteLine(song);
 
         }
 
@@ -57,10 +87,10 @@ namespace ClassWork
             myTypes.AddString();
             string words = myTypes.StringBuilderExample
             ("Hello", "C  Sharp", "class");
-            
+
             Console.WriteLine(words);
             myTypes.charTypeExample();
-             myTypes.EscapeExample();
+            myTypes.EscapeExample();
             myTypes.PlaceHolderExample();
             myTypes.MyHouseArray();
             myTypes.MultiArraySample();
@@ -80,8 +110,8 @@ namespace ClassWork
             myTypes.IncrementDecrement();
             myTypes.SpecialValue();
             myTypes.ComparisonOperators();
-           
-        
+
+
         }
 
         static void OtherNumbericExamples()
@@ -98,14 +128,17 @@ namespace ClassWork
 
             Console.WriteLine(my.Name);
 
-
-
-
         }
+
 
     }
 
+
+
+
 }
+
+
 
 
 
