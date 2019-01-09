@@ -151,12 +151,42 @@ namespace Lessons
             switch (day)
             {
                 case "Sunday":
-                goto default;
-                case"Monday":
+                    goto default;
+                case "Monday":
                 case "Tusday":
                     return "Test someting Tusday";
                 default:
-                return "TestNothing";
+                    return "TestNothing";
+            }
+        }
+
+
+        //put method
+
+        public void SampleDays(DaysOfWeek days)
+
+        {
+            switch (days)
+            {
+
+                case DaysOfWeek.Fri:
+                case DaysOfWeek.Sat:
+                case DaysOfWeek.Sun:
+                    Console.WriteLine("the Weekend is Here.");
+                    break;
+                case DaysOfWeek.Mon:
+                case DaysOfWeek.Tus:
+                case DaysOfWeek.Wen:
+                case DaysOfWeek.Thur:
+
+                    Console.WriteLine("Still at Work");
+                    break;
+
+
+
+
+
+
             }
         }
 

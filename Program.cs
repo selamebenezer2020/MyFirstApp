@@ -45,14 +45,35 @@ namespace ClassWork
             // MycarResuilt();
             //MyNumericExamples();
             //MyStringExamples();
-            StatmentSamples();
+            //StatmentSamples();
+            //HouseSample();
+            StructSample();
 
+
+        }
+        static void StructSample()
+        {
+
+            BookSample bookSample = new BookSample(5.99m, "Zombie Fallout", "Mark Tufo");
+
+            Console.WriteLine(" The book " + bookSample.title + " by " + bookSample.author +
+            " is $" + bookSample.price);
+        }
+
+        static void HouseSample()
+        {
+            House myHouse = new House("Concret", "triple pane");
+            Console.WriteLine(myHouse.paintDoor);
+            Console.WriteLine(myHouse.Foundation);
 
 
         }
 
         static void StatmentSamples()
         {
+
+
+
             StatmentExamples se = new StatmentExamples();
 
 
@@ -69,7 +90,12 @@ namespace ClassWork
             //se.SampleForEach();
             //string mystring = se.JumpStatmentExample("Sunday");
             //Console.WriteLine(mystring);
-            BottlesSong();
+            // BottlesSong();
+            se.SampleDays(DaysOfWeek.Wen);
+
+
+
+
         }
 
         static void BottlesSong()
@@ -128,6 +154,16 @@ namespace ClassWork
 
             Console.WriteLine(my.Name);
 
+        }
+
+        public void DaysOfWeek1(int day)
+        {
+            Console.WriteLine("give me weekend days");
+            int DaysOfWeek1 = day;
+            if (DaysOfWeek1 == 1)
+                Console.WriteLine("Sunday");
+            else if (DaysOfWeek1 == 2)
+                Console.WriteLine("Monday");
         }
 
 

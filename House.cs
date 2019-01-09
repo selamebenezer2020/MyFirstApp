@@ -64,8 +64,25 @@ namespace ClassWork
 
         public string roof { get; set; }
 
+        //default constarctor
 
+        public House() { }
+        public House(string foundation, string window)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            Roof = "Shingles";
+            paintDoor = "Green";
+        }
 
+        public House(string foundation, string window, string roof, string doorpaint)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            Roof = roof;
+            paintDoor = doorpaint;
+
+        }
 
 
         //below are methods 
@@ -80,7 +97,21 @@ namespace ClassWork
             Console.WriteLine("The door closes");
         }
 
-        
+        public void OpenDoor(bool isExterior)//overload method diffrnt signature
+        {
+            if (isExterior)
+            {
+                Console.WriteLine("open front door.");
+
+            }
+            else
+            {
+                Console.WriteLine("Open Bedroom door.");
+            }
+
+        }
+
+
 
     }
 }
