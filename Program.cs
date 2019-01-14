@@ -48,13 +48,35 @@ namespace ClassWork
             //MyStringExamples();
             //StatmentSamples();
             //HouseSample();
-            StructSample();
-            Graderesult();
+            //StructSample();
+            //Graderesult();
+            FruitsSample();
+
+
+
+        }
+        static void FruitsSample()
+        {
+            Apple myApple = new Apple();
+            myApple.EatFruit();
+
+
+            Fruits myFruits = new Apple();
+            myFruits.EatFruit();
+
+            Orange myOrange = new Orange(); //object instance of orange
+            myOrange.EatFruit();
+            RanchStyle ranch = new RanchStyle("Stone", "Triple pane", "Composite", "Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
+
+
 
 
 
 
         }
+
         static void StructSample()
         {
 
