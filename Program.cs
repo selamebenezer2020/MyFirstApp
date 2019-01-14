@@ -1,5 +1,6 @@
 ﻿using System;
 using Lessons;
+using Quiz;
 
 /*This namespace represents the file folder that the class is in
 {
@@ -48,6 +49,9 @@ namespace ClassWork
             //StatmentSamples();
             //HouseSample();
             StructSample();
+            Graderesult();
+
+
 
 
         }
@@ -69,9 +73,10 @@ namespace ClassWork
 
         }
 
+
+
         static void StatmentSamples()
         {
-
 
 
             StatmentExamples se = new StatmentExamples();
@@ -92,6 +97,8 @@ namespace ClassWork
             //Console.WriteLine(mystring);
             // BottlesSong();
             se.SampleDays(DaysOfWeek.Wen);
+            Graderesult();
+
 
 
 
@@ -142,10 +149,26 @@ namespace ClassWork
 
         static void OtherNumbericExamples()
         {
-            NumericTypes myTypes = new NumericTypes();
+            NumericTypes myTypes = new NumericTypes();//deafaltconstaractor
             myTypes.otherOperator();
         }
 
+        public static void Graderesult()
+        {
+            QuizClass1 myGrade = new QuizClass1();
+            string description = myGrade.GradeResult("E");
+            Console.WriteLine(description);
+            myGrade.ForTest();
+
+        }
+
+
+        static void quizpractice()
+        {
+            StatmentExamples myquizpractice = new StatmentExamples();
+            myquizpractice.quizpractice();
+
+        }
 
         static void MycarResuilt()
         {
@@ -158,13 +181,31 @@ namespace ClassWork
 
         public void DaysOfWeek1(int day)
         {
-            Console.WriteLine("give me weekend days");
             int DaysOfWeek1 = day;
             if (DaysOfWeek1 == 1)
                 Console.WriteLine("Sunday");
             else if (DaysOfWeek1 == 2)
                 Console.WriteLine("Monday");
+            else
+            {
+                Console.WriteLine("Tusday");
+            }
         }
+        public void Eodd()
+        {
+            int num1 = 5, num2 = 5;
+
+            if (num1 == num2)
+            {
+                Console.WriteLine("the number is odd");
+            }
+
+            else
+            {
+                Console.WriteLine("the number is even");
+            }
+        }
+
 
 
     }

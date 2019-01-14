@@ -80,6 +80,29 @@ namespace Lessons
 
         }
 
+
+
+        public void quizpractice()
+        {
+            int x = 5, y = 6;
+            if (x != y || x > y)
+            {
+                Console.WriteLine("not equal");
+
+            }
+            else if (x > y)
+            {
+                Console.WriteLine("The number is greater");
+            }
+            else
+            {
+                Console.WriteLine("Correct");
+            }
+            Console.WriteLine("this line is excuted");
+
+
+        }
+
         public void SampleConditional()
         {
             int num = 20;
@@ -183,11 +206,11 @@ namespace Lessons
                     break;
 
 
-
-
-
-
             }
+
+
+
+
         }
 
 
