@@ -50,11 +50,45 @@ namespace ClassWork
             //HouseSample();
             //StructSample();
             //Graderesult();
-            FruitsSample();
+            //FruitsSample();
+            //ParamsSample();
+            ModifierExample();
 
 
 
         }
+        static void ModifierExample()
+        {
+            int test = 14;
+            Lesson11 myLesson = new Lesson11();
+            myLesson.RefSample(ref test);
+            Console.WriteLine(test);
+            string first, second;//this is method for outsample
+            myLesson.outSample("Jhon Doe", out first, out second);
+            Console.WriteLine(first);
+            Console.WriteLine(second);
+
+
+        }
+
+
+        static void ParamsSample()
+        {
+            Lesson11 lesson = new Lesson11();
+            lesson.UseParams(10, 3, 24, 36, 45, 120);
+
+            lesson.UseParams();
+
+            int[] intArray = { 2, 3, 4, 5, 6, };
+            lesson.UseParams(intArray);
+
+            lesson.UseParams2(1, "Happy", false, 34.5F);
+
+            lesson.optionlalParam("selam");
+            lesson.optionlalParam("selam", 19);
+
+        }
+
         static void FruitsSample()
         {
             Apple myApple = new Apple();
@@ -69,10 +103,6 @@ namespace ClassWork
             RanchStyle ranch = new RanchStyle("Stone", "Triple pane", "Composite", "Blue");
             ranch.OpenDoor();
             Console.WriteLine(ranch.Roof);
-
-
-
-
 
 
         }

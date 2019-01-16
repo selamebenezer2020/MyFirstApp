@@ -14,5 +14,10 @@ namespace Lessons
             Console.WriteLine("Throughing fruits");
 
         }
+        public string spoil { get; set; }
+        public void FruitsSpoil(string blend, string spoil, string bake)
+        {
+            Console.WriteLine("The frits can not be eaten");
+        }
     }
 }

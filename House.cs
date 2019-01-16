@@ -64,9 +64,9 @@ namespace ClassWork
 
         public string roof { get; set; }
 
-        //default constarctor
 
-        public House() { }
+
+        public House() { } //default constarctor
         public House(string foundation, string window)
         : this(foundation, window, "shingle", "Green")
         { }
