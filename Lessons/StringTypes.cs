@@ -35,7 +35,6 @@ namespace Lessons
 
             char ab = 'A';
             char de = 'B';
-            char copyrightsymbol = '\u00A9';
             char hi = (char)88;// change 88 to char
 
             Console.WriteLine(hi);
@@ -96,7 +95,7 @@ namespace Lessons
             myIntArray[1, 1] = 4;
 
             Console.WriteLine(myIntArray[1, 0]);
-            Console.WriteLine(myIntArray[1,1]);
+            Console.WriteLine(myIntArray[1, 1]);
         }
 
 

@@ -62,7 +62,7 @@ namespace ClassWork
 
         public string door { get; set; }
 
-        public string roof { get; set; }
+        public string roof { get; set; } = "composite";
 
 
 

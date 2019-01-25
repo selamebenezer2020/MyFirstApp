@@ -52,9 +52,116 @@ namespace ClassWork
             //Graderesult();
             //FruitsSample();
             //ParamsSample();
-            ModifierExample();
+            //ModifierExample();
+            //Lesson12();
+            //AbstractDemo();
+            //DeconstractSample();
+            //FinalizerSample();
+            //IndexerSample();
+            PartialSample();
 
 
+
+
+
+        }
+        static void PartialSample()
+        {
+            Pear pear = new Pear("Yellow");
+
+        }
+        static void IndexerSample()
+        {
+            IndexerExample indexerExample = new IndexerExample();
+            indexerExample[2] = 250;
+            for (int i = 0; i < indexerExample.Length; i++)
+                Console.WriteLine("Value {0} = {1}", i, indexerExample[i]);
+
+        }
+
+        static void FinalizerSample()
+        {
+            FinalizerExample finalExam = new
+            FinalizerExample("Jhon", "Doe");
+        }
+        static void DeconstractSample()
+        {
+            string first = "Tom", last = "Jones";
+
+            Lesson13 lesson13 = new Lesson13("Jhon", "Doe");
+            Console.WriteLine("First Name = {0} and LastName = {1}", first, last);
+
+            lesson13.Deconstruct(out first, out last);
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
+
+
+        }
+        static void AbstractDemo()
+        {
+            TRex trex = new TRex();
+            Triceratops triceratops = new Triceratops();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            trex.EatFood();
+            trex.Move();
+            trex.skinType();
+            trex.Teeth();
+            trex.Die();
+            triceratops.EatFood();
+            triceratops.Move();
+            triceratops.Teeth();
+            triceratops.skinType();
+
+            triceratops.Die();
+            triceratops.sleep();
+            triceratops.Teeth();
+            triceratops.skinType();
+
+
+
+
+
+
+        }
+
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("43.2");
+            Console.WriteLine(temp);
+            double temp2 = Utilities.FahrenheitToCelsius("109.76");
+            Console.WriteLine(temp2);
 
         }
         static void ModifierExample()
