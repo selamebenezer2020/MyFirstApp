@@ -61,13 +61,46 @@ namespace ClassWork
             //PartialSample();
             //AnotherHouseExample();
             // GenericSample();
-            CollectionSample();
+            // CollectionSample();
+            //LeapYearSample();
+            //SampleOhmsLaw();
+            //SampleMetric();
+            SampleTelevition();
+
+        }
+        static void SampleTelevition()
+        {
+            HDtv Tv = new HDtv();
+            FourKtv tv1 = new FourKtv();
+            Tv.Hdtv();
+            tv1.FourKtvs();
+
+
+        }
+        static void SampleOhmsLaw()
+        {
+            Formula F = new Formula();
+            F.CalcVoltage();
+            F.calccurrent();
+            F.calcresistance();
+        }
+
+
+        static void SampleMetric()
+        {
+            Conversion C = new Conversion();
+            C.Metric(4.5, Conversion.Convert.centimeter);
 
 
 
 
 
+        }
 
+        static void LeapYearSample()
+        {
+            LabResult L = new LabResult();
+            L.Leapyear();
         }
         static void CollectionSample()
         {
@@ -135,38 +168,6 @@ namespace ClassWork
         {
             TRex trex = new TRex();
             Triceratops triceratops = new Triceratops();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             trex.EatFood();

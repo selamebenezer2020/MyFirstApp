@@ -131,7 +131,10 @@ namespace Lessons
                     Console.WriteLine("No correct number was choosen");
                     break;
             }
+
+
         }
+
 
         public void SampleWhile()
         {
@@ -182,6 +185,7 @@ namespace Lessons
                     return "TestNothing";
             }
         }
+
 
 
         //put method
