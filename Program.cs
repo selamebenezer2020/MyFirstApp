@@ -62,10 +62,11 @@ namespace ClassWork
             //AnotherHouseExample();
             // GenericSample();
             // CollectionSample();
-            //LeapYearSample();
+            LeapYearSample();
             //SampleOhmsLaw();
             //SampleMetric();
-            SampleTelevition();
+            //SampleTelevition();
+            //TvStructSample();
 
         }
         static void SampleTelevition()
@@ -257,6 +258,13 @@ namespace ClassWork
 
             Console.WriteLine(" The book " + bookSample.title + " by " + bookSample.author +
             " is $" + bookSample.price);
+        }
+
+        static void TvStructSample()
+        {
+            TvStruct T = new TvStruct();
+            T.TvDemo(500, 75, 4, true, "has remote");
+
         }
 
         static void HouseSample()

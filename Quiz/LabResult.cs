@@ -6,15 +6,13 @@ namespace Quiz
 
         public void Leapyear()
         {
-            string y = "1920";
+            int y = 2021;
 
-            if (y.Length == 4)
+            if (y % 4 == 1)
             {
-                int.Parse(y);
+
+                Console.WriteLine("year is Leapyear");
             }
-            //Console.WriteLine("year is Leapyear")
-
-
             else
             {
                 Console.WriteLine("is not leap year");
