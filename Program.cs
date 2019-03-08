@@ -1,6 +1,7 @@
 ﻿using System;
 using Lessons;
 using Quiz;
+using Advanced;
 
 /*This namespace represents the file folder that the class is in
 {
@@ -17,6 +18,8 @@ namespace ClassWork
     class Program
     //class is a blueprint 
     {
+        public delegate void Tryon(string Type);
+
         static void Main(string[] args)
 
 
@@ -62,12 +65,39 @@ namespace ClassWork
             //AnotherHouseExample();
             // GenericSample();
             // CollectionSample();
-            LeapYearSample();
+            //LeapYearSample();
             //SampleOhmsLaw();
             //SampleMetric();
             //SampleTelevition();
-            //TvStructSample();
+            // TvStructSample();
+            DelegateSample();
+            MultiDelegateSample();
 
+
+        }
+        private static void MultiDelegateSample()
+        {
+            Hats moreHats = new Hats(7);
+            Tryon someHats, niceHat, SadHats;
+
+            niceHat = moreHats.FindLuckyHat;
+            niceHat("Top");
+
+            SadHats = moreHats.FindUglyHat;
+            SadHats("Dunce");
+
+            someHats = niceHat + SadHats;
+            someHats("Cowboy");
+
+            ;
+        }
+        private static void DelegateSample()
+        {
+            Hats myHat = new Hats("cowboy", 7);
+            Tryon theHat = myHat.TryOnHat;
+            theHat("I tryon a " + myHat.HatType + "hat that was size" + myHat.HatSize);
+
+            Hats mySecondHat = new Hats();
         }
         static void SampleTelevition()
         {
@@ -75,7 +105,6 @@ namespace ClassWork
             FourKtv tv1 = new FourKtv();
             Tv.Hdtv();
             tv1.FourKtvs();
-
 
         }
         static void SampleOhmsLaw()
@@ -264,6 +293,8 @@ namespace ClassWork
         {
             TvStruct T = new TvStruct();
             T.TvDemo(500, 75, 4, true, "has remote");
+            T.LetterOrder();
+            T.Writingname();
 
         }
 
