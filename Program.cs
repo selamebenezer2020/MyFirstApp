@@ -70,10 +70,27 @@ namespace ClassWork
             //SampleMetric();
             //SampleTelevition();
             // TvStructSample();
-            DelegateSample();
-            MultiDelegateSample();
+            //DelegateSample();
+            //MultiDelegateSample();
+            //EventSample();
+            LamdaSample();
 
 
+
+
+
+        }
+        private static void LamdaSample()
+        {
+            LamdaExample myLamda = new LamdaExample();
+            Console.WriteLine(myLamda.MyLamdaOne(5));
+
+        }
+        private static void EventSample()
+        {
+            Coats myCoat = new Coats();
+            string result = myCoat.myResult;
+            Console.WriteLine(result);
         }
         private static void MultiDelegateSample()
         {
