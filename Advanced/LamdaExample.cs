@@ -11,7 +11,7 @@ namespace Advanced
         public int MyLamdaOne(int val)
         {
             //input parameter =>expresstion or statment block
-            del myDelegate = x => x * x;
+            del myDelegate = (x) => x * x;
             return myDelegate(val);
         }
     }
